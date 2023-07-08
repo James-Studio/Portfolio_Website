@@ -1,0 +1,18 @@
+@mixin circle-icon-format {
+    width: 5em;
+    height: 5em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 5px 5px 2px #ccc;
+    -moz-box-shadow: 5px 5px 2px #ccc;
+    -webkit-box-shadow: 5px 5px 2px #ccc;
+    -khtml-box-shadow: 5px 5px 2px #ccc;
+}
+
+@mixin display-img-icon{
+    display: inline;
+    height: 80%;
+    width: 80%;
+    margin: 10%;
+}
