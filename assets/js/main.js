@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
+(function() {
 
 	var $window = $(window),
 		$body = $('body'),
@@ -12,6 +12,43 @@
 		$main = $('#main'),
 		$panels = $main.children('.panel'),
 		$nav = $('#nav'), $nav_links = $nav.children('a');
+
+	// background tranformation settings
+			
+	var currentIndex = 0;
+	var backgroundSlider = $(".background-slider");
+	var backgroundImageUrls = [
+		"./images/background/color1",
+		"./images/background/color2",
+		"./images/background/color3",
+		"./images/background/color4",
+		"./images/background/color5",
+		"./images/background/color6",
+		"./images/background/color7",
+		"./images/background/color8",
+		"./images/background/color9",
+		"./images/background/color10",
+		"./images/background/color11",
+		"./images/background/color12",
+		"./images/background/color13",
+		"./images/background/color14",
+		"./images/background/color15",
+		"./images/background/color16",
+		"./images/background/color17",
+		"./images/background/color18",
+		"./images/background/color19",
+		"./images/background/color20",
+		"./images/background/color21",
+		"./images/background/color22",
+		"./images/background/color23",
+		"./images/background/color24",
+		"./images/background/color25",
+		"./images/background/color26"
+	];
+
+	// Set the time interval (in milliseconds) for changing the background image
+	var interval = 5000; // 5 seconds
+
 
 	// Breakpoints.
 		breakpoints({
@@ -167,46 +204,23 @@
 
 			});
 
-	// IE: Fixes.
-		if (browser.name == 'ie') {
+			
+			
+			function changeBackgroundImage() {
+				var imageUrl = 'url(' + backgroundImageUrls[currentIndex] + '.png)';
+				backgroundSlider.css("background-image", imageUrl);
+				currentIndex = (currentIndex + 1) % backgroundImageUrls.length;
+				console.log("EXE!");
+			}
+			
+			// Initial background change (optional)
+			changeBackgroundImage();
+			
+			
+			
+			// Start changing the background image at the specified interval
+			setInterval(changeBackgroundImage, interval);
+			  
 
-			// Fix min-height/flexbox.
-				$window.on('--refresh', function() {
-
-					$wrapper.css('height', 'auto');
-
-					window.setTimeout(function() {
-
-						var h = $wrapper.height(),
-							wh = $window.height();
-
-						if (h < wh)
-							$wrapper.css('height', '100vh');
-
-					}, 0);
-
-				});
-
-				$window.on('resize load', function() {
-					$window.triggerHandler('--refresh');
-				});
-
-			// Fix intro pic.
-				$('.panel.intro').each(function() {
-
-					var $pic = $(this).children('.pic'),
-						$img = $pic.children('img');
-
-					$pic
-						.css('background-image', 'url(' + $img.attr('src') + ')')
-						.css('background-size', 'cover')
-						.css('background-position', 'center');
-
-					$img
-						.css('visibility', 'hidden');
-
-				});
-
-		}
-
+	
 })(jQuery);
