@@ -15,7 +15,7 @@
 
 	// background tranformation settings
 			
-	var currentIndex = 0;
+	var zeroIndex = 0;
 	var backgroundSlider = $(".background-slider");
 	var backgroundImageUrls = [
 		"./images/background/color1",
@@ -207,9 +207,9 @@
 			
 			
 			function changeBackgroundImage() {
+				var currentIndex = Math.floor(Math.random() * backgroundImageUrls.length) + 1;
 				var imageUrl = 'url(' + backgroundImageUrls[currentIndex] + '.png)';
 				backgroundSlider.css("background-image", imageUrl);
-				currentIndex = (currentIndex + 1) % backgroundImageUrls.length;
 				console.log("EXE!");
 			}
 			
@@ -219,7 +219,7 @@
 			
 			
 			// Start changing the background image at the specified interval
-			setInterval(changeBackgroundImage, interval);
+			//setInterval(changeBackgroundImage, interval);
 			  
 
 	
