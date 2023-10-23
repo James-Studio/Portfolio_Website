@@ -205,12 +205,12 @@
 			});
 
 			
-			
 			function changeBackgroundImage() {
-				var currentIndex = Math.floor(Math.random() * backgroundImageUrls.length) + 1;
+				var currentIndex = Math.floor(Math.random() * (backgroundImageUrls.length-3)) + 1;
 				var imageUrl = 'url(' + backgroundImageUrls[currentIndex] + '.png)';
 				backgroundSlider.css("background-image", imageUrl);
 				console.log("EXE!");
+				console.log(currentIndex);
 			}
 			
 			// Initial background change (optional)

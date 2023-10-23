@@ -717,6 +717,18 @@
 					}
 				}
 			}
+			.publication{
+				.pub-title{
+					font-size: 1.25em;
+					font-weight: 500;
+					color: #444444; 
+				}
+				.pub-detail{
+					font-size: 1.0em;
+					font-weight: 500;
+					color: #999999;
+				}
+			}
 			.intern{
 				#resume-file{
 					font-size: 1.25em;
@@ -822,7 +834,7 @@
 						position: relative;
 						width: 23%;
 						height: 100%;
-						margin-right: 25px;
+						//margin-right: 25px;
 						
 						.git-img {						
 						position: relative;
@@ -833,7 +845,9 @@
 						
 					}
 					.pr1-content {
+						margin-left: 25px;
 						.pr1-name {
+							margin-right: 20px;
 							font-size: 1.25em;
 							font-weight: 400;
 							color: #111111;
@@ -857,7 +871,7 @@
 						position: relative;
 						width: 23%;
 						height: 100%;
-						margin-right: 25px;
+						//margin-right: 25px;
 						
 						.git-img {						
 						position: relative;
@@ -868,7 +882,9 @@
 						
 					}
 					.pr2-content {
+						margin-left: 25px;
 						.pr2-name {
+							margin-right: 20px;
 							font-size: 1.25em;
 							font-weight: 400;
 							color: #111111;
@@ -892,7 +908,7 @@
 						position: relative;
 						width: 23%;
 						height: 100%;
-						margin-right: 25px;
+						//margin-right: 25px;
 						
 						.git-img {						
 						position: relative;
@@ -903,7 +919,9 @@
 						
 					}
 					.pr3-content {
+						margin-left: 25px;
 						.pr3-name {
+							margin-right: 20px;
 							font-size: 1.25em;
 							font-weight: 400;
 							color: #111111;
@@ -927,7 +945,7 @@
 						position: relative;
 						width: 23%;
 						height: 100%;
-						margin-right: 25px;
+						//margin-right: 25px;
 						
 						.git-img {						
 						position: relative;
@@ -938,7 +956,9 @@
 						
 					}
 					.pr4-content {
+						margin-left: 25px;
 						.pr4-name {
+							margin-right: 20px;
 							font-size: 1.25em;
 							font-weight: 400;
 							color: #111111;

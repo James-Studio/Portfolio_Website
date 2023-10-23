@@ -1569,6 +1569,16 @@ body.is-preload #wrapper {
 #main > .panel .eng .tg .content .content-p .date {
   color: #999999;
 }
+#main > .panel .publication .pub-title {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #444444;
+}
+#main > .panel .publication .pub-detail {
+  font-size: 1em;
+  font-weight: 500;
+  color: #999999;
+}
 #main > .panel .intern #resume-file {
   font-size: 1.25em;
   font-weight: 500;
@@ -1690,7 +1700,6 @@ body.is-preload #wrapper {
   position: relative;
   width: 23%;
   height: 100%;
-  margin-right: 25px;
 }
 #main > .panel .project-lists .pr1 .git .git-img {
   position: relative;
@@ -1698,7 +1707,11 @@ body.is-preload #wrapper {
   height: 100%;
   border-radius: 50%;
 }
+#main > .panel .project-lists .pr1 .pr1-content {
+  margin-left: 25px;
+}
 #main > .panel .project-lists .pr1 .pr1-content .pr1-name {
+  margin-right: 20px;
   font-size: 1.25em;
   font-weight: 400;
   color: #111111;
@@ -1721,7 +1734,6 @@ body.is-preload #wrapper {
   position: relative;
   width: 23%;
   height: 100%;
-  margin-right: 25px;
 }
 #main > .panel .project-lists .pr2 .git .git-img {
   position: relative;
@@ -1729,7 +1741,11 @@ body.is-preload #wrapper {
   height: 100%;
   border-radius: 50%;
 }
+#main > .panel .project-lists .pr2 .pr2-content {
+  margin-left: 25px;
+}
 #main > .panel .project-lists .pr2 .pr2-content .pr2-name {
+  margin-right: 20px;
   font-size: 1.25em;
   font-weight: 400;
   color: #111111;
@@ -1752,7 +1768,6 @@ body.is-preload #wrapper {
   position: relative;
   width: 23%;
   height: 100%;
-  margin-right: 25px;
 }
 #main > .panel .project-lists .pr3 .git .git-img {
   position: relative;
@@ -1760,7 +1775,11 @@ body.is-preload #wrapper {
   height: 100%;
   border-radius: 50%;
 }
+#main > .panel .project-lists .pr3 .pr3-content {
+  margin-left: 25px;
+}
 #main > .panel .project-lists .pr3 .pr3-content .pr3-name {
+  margin-right: 20px;
   font-size: 1.25em;
   font-weight: 400;
   color: #111111;
@@ -1783,7 +1802,6 @@ body.is-preload #wrapper {
   position: relative;
   width: 23%;
   height: 100%;
-  margin-right: 25px;
 }
 #main > .panel .project-lists .pr4 .git .git-img {
   position: relative;
@@ -1791,7 +1809,11 @@ body.is-preload #wrapper {
   height: 100%;
   border-radius: 50%;
 }
+#main > .panel .project-lists .pr4 .pr4-content {
+  margin-left: 25px;
+}
 #main > .panel .project-lists .pr4 .pr4-content .pr4-name {
+  margin-right: 20px;
   font-size: 1.25em;
   font-weight: 400;
   color: #111111;
