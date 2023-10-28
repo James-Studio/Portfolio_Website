@@ -214,7 +214,7 @@
 			}
 			
 			// Initial background change (optional)
-			changeBackgroundImage();
+			//changeBackgroundImage();
 			
 			
 			

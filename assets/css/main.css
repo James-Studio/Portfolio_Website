@@ -1091,13 +1091,6 @@ em, i {
   font-style: italic;
 }
 
-hr {
-  border: 0;
-  border-top: solid 1px #ddd;
-  padding: 1.5em 0 0 0;
-  margin: 1.75em 0 0 0;
-}
-
 sub {
   position: relative;
   top: 0.5em;
@@ -1439,6 +1432,7 @@ ul.actions li:first-child {
   transition: opacity .25s ease-in-out;
   width: 5.5em;
   margin-left: -2.75em;
+  border-radius: 10px;
 }
 #nav a span:after {
   content: "";
@@ -1867,7 +1861,6 @@ body.is-preload #wrapper {
 }
 #main > .panel.intro {
   padding: 0;
-  height: 20em;
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
@@ -1907,6 +1900,83 @@ body.is-preload #wrapper {
      object-fit: cover;
   border-radius: inherit;
   animation: stop 5s linear infinite;
+}
+#main > .panel.intro .img-h .self-intro {
+  color: #999999;
+}
+#main > .panel.intro .img-h .cur-job-title {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  border: solid 4px #777777;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  color: #777777;
+  border-radius: 10px;
+}
+#main > .panel.intro .img-h .cur-job {
+  color: #777777;
+}
+#main > .panel.intro .img-h .cur-job .job-date {
+  font-size: 0.7em;
+  color: #999999;
+}
+#main > .panel.intro .img-h .gray-line {
+  border: solid 2px #555555;
+  border-radius: 10px;
+  margin: 0.8em 0 1.5em 0;
+  width: 35em;
+}
+#main > .panel.intro .img-h .table-logo {
+  position: relative;
+  margin-top: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main > .panel.intro .img-h .table-logo .icon-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+}
+#main > .panel.intro .img-h .table-logo .icon-container .fab {
+  color: #444444;
+  font-size: 3em;
+}
+#main > .panel.intro .img-h .table-logo .icon-container .fab:hover {
+  color: #999999;
+}
+#main > .panel.intro .img-h .table-logo .icon-container .fas {
+  color: #444444;
+  font-size: 2.6em;
+}
+#main > .panel.intro .img-h .table-logo .icon-container .fas:hover {
+  color: #999999;
+}
+#main > .panel.intro .img-h .table-logo .icon-container .icon-info {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  transform: translate(-50%, 0%);
+  background-color: #222222;
+  padding: 0.3em;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 0.9em;
+  left: 50%;
+}
+#main > .panel.intro .img-h .table-logo .icon-container .icon-info:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0.4em;
+  left: 50%;
+  margin-left: -0.6em;
+  border-bottom: solid 0.6em #222222;
+  border-left: solid 0.6em transparent;
+  border-right: solid 0.6em transparent;
+}
+#main > .panel.intro .img-h .table-logo .icon-container:hover .icon-info {
+  display: block;
 }
 @keyframes swirl {
   from {
