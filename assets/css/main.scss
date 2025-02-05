@@ -679,6 +679,28 @@
 			
 			/* NCKU Icon */
 			.edu{
+				.nyu{
+					position: relative;
+					display: flex;
+					.uni-icon{
+						flex: 1; /* block two div together */
+						.circle-icon{
+							@include circle-icon-format;
+							background-color: #57068c;
+							img{
+								@include display-img-icon;
+							}
+						}
+					}
+					.content{
+						flex: 3;
+						text-align: left;
+						.date{
+							color: #999999
+						}
+						/*padding sequence : top right bottom left*/
+					}
+				}
 				.ncku{
 					position: relative;
 					display: flex;
@@ -770,11 +792,88 @@
 							}
 						}
 					}
+					// ncku
 					.lab-info{
 						display: flex;
 						.lab-icon{
 							flex: 1; /* block two div together */
 							.circle-icon{
+								@include circle-icon-format;
+								img{
+									@include display-img-icon;
+								}
+							}
+						}
+						.job-div{
+							flex: 3;
+							text-align: left;
+							.job-p{
+								.company{
+									font-size: 1.25em;
+									font-weight: 500;
+									color: #444444; 
+								}
+								.position{
+									font-size: 1.0em;
+									font-weight: 400;
+									color: #444444; 
+								}
+								.date{
+									color: #999999;
+								}
+								.job-descrip{
+									flex: 3;
+									text-align: left;
+									/*padding sequence : top right bottom left*/
+								}
+							}
+						}
+					}
+					// unsw
+					.unsw-info{
+						display: flex;
+						.lab-icon{
+							flex: 1; /* block two div together */
+							.circle-icon{
+								background-color: #fedc00;
+								@include circle-icon-format;
+								img{
+									@include display-img-icon;
+								}
+							}
+						}
+						.job-div{
+							flex: 3;
+							text-align: left;
+							.job-p{
+								.company{
+									font-size: 1.25em;
+									font-weight: 500;
+									color: #444444; 
+								}
+								.position{
+									font-size: 1.0em;
+									font-weight: 400;
+									color: #444444; 
+								}
+								.date{
+									color: #999999;
+								}
+								.job-descrip{
+									flex: 3;
+									text-align: left;
+									/*padding sequence : top right bottom left*/
+								}
+							}
+						}
+					}
+					// nyu
+					.nyu-info{
+						display: flex;
+						.lab-icon{
+							flex: 1; /* block two div together */
+							.circle-icon{
+								background-color: #57068c;
 								@include circle-icon-format;
 								img{
 									@include display-img-icon;

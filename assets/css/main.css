@@ -1528,6 +1528,39 @@ body.is-preload #wrapper {
   padding: 3.5em 2.5em 2.5em 2.5em; /*top, right, bottom, left*/
   /* NCKU Icon */
 }
+#main > .panel .edu .nyu {
+  position: relative;
+  display: flex;
+}
+#main > .panel .edu .nyu .uni-icon {
+  flex: 1; /* block two div together */
+}
+#main > .panel .edu .nyu .uni-icon .circle-icon {
+  width: 5em;
+  height: 5em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 5px 5px 2px #ccc;
+  -moz-box-shadow: 5px 5px 2px #ccc;
+  -webkit-box-shadow: 5px 5px 2px #ccc;
+  -khtml-box-shadow: 5px 5px 2px #ccc;
+  background-color: #57068c;
+}
+#main > .panel .edu .nyu .uni-icon .circle-icon img {
+  display: inline;
+  height: 80%;
+  width: 80%;
+  margin: 10%;
+}
+#main > .panel .edu .nyu .content {
+  flex: 3;
+  text-align: left;
+  /*padding sequence : top right bottom left*/
+}
+#main > .panel .edu .nyu .content .date {
+  color: #999999;
+}
 #main > .panel .edu .ncku {
   position: relative;
   display: flex;
@@ -1668,6 +1701,98 @@ body.is-preload #wrapper {
   color: #999999;
 }
 #main > .panel .intern .intern-exp .lab-info .job-div .job-p .job-descrip {
+  flex: 3;
+  text-align: left;
+  /*padding sequence : top right bottom left*/
+}
+#main > .panel .intern .intern-exp .unsw-info {
+  display: flex;
+}
+#main > .panel .intern .intern-exp .unsw-info .lab-icon {
+  flex: 1; /* block two div together */
+}
+#main > .panel .intern .intern-exp .unsw-info .lab-icon .circle-icon {
+  background-color: #fedc00;
+  width: 5em;
+  height: 5em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 5px 5px 2px #ccc;
+  -moz-box-shadow: 5px 5px 2px #ccc;
+  -webkit-box-shadow: 5px 5px 2px #ccc;
+  -khtml-box-shadow: 5px 5px 2px #ccc;
+}
+#main > .panel .intern .intern-exp .unsw-info .lab-icon .circle-icon img {
+  display: inline;
+  height: 80%;
+  width: 80%;
+  margin: 10%;
+}
+#main > .panel .intern .intern-exp .unsw-info .job-div {
+  flex: 3;
+  text-align: left;
+}
+#main > .panel .intern .intern-exp .unsw-info .job-div .job-p .company {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #444444;
+}
+#main > .panel .intern .intern-exp .unsw-info .job-div .job-p .position {
+  font-size: 1em;
+  font-weight: 400;
+  color: #444444;
+}
+#main > .panel .intern .intern-exp .unsw-info .job-div .job-p .date {
+  color: #999999;
+}
+#main > .panel .intern .intern-exp .unsw-info .job-div .job-p .job-descrip {
+  flex: 3;
+  text-align: left;
+  /*padding sequence : top right bottom left*/
+}
+#main > .panel .intern .intern-exp .nyu-info {
+  display: flex;
+}
+#main > .panel .intern .intern-exp .nyu-info .lab-icon {
+  flex: 1; /* block two div together */
+}
+#main > .panel .intern .intern-exp .nyu-info .lab-icon .circle-icon {
+  background-color: #57068c;
+  width: 5em;
+  height: 5em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 5px 5px 2px #ccc;
+  -moz-box-shadow: 5px 5px 2px #ccc;
+  -webkit-box-shadow: 5px 5px 2px #ccc;
+  -khtml-box-shadow: 5px 5px 2px #ccc;
+}
+#main > .panel .intern .intern-exp .nyu-info .lab-icon .circle-icon img {
+  display: inline;
+  height: 80%;
+  width: 80%;
+  margin: 10%;
+}
+#main > .panel .intern .intern-exp .nyu-info .job-div {
+  flex: 3;
+  text-align: left;
+}
+#main > .panel .intern .intern-exp .nyu-info .job-div .job-p .company {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #444444;
+}
+#main > .panel .intern .intern-exp .nyu-info .job-div .job-p .position {
+  font-size: 1em;
+  font-weight: 400;
+  color: #444444;
+}
+#main > .panel .intern .intern-exp .nyu-info .job-div .job-p .date {
+  color: #999999;
+}
+#main > .panel .intern .intern-exp .nyu-info .job-div .job-p .job-descrip {
   flex: 3;
   text-align: left;
   /*padding sequence : top right bottom left*/
